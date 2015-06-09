@@ -1,5 +1,5 @@
 <html>
-<div style='width:640px; margin: 0 auto; font-family:Helvetica, Arial; float: left; padding-left: 5em; padding-top: 2em'>
+<div style='width:1000px; margin: 0 auto; font-family:Helvetica, Arial; float: left; padding-left: 5em; padding-top: 2em; text-align: justify'>
 <h1>CS CM124 Project Website</h1>
 <p style ="margin-top: -1.5em">
 <h3><i>Andrew F. Kuang (UID: 004042464)</i></h3>
@@ -7,41 +7,164 @@
 <h3>Project 3 (Easy) - Relatedness Estimator</h3>
 <h4>Introduction</h4>
 
-<p style="text-indent: 5em;">
+<p style="text-indent: 3em;">
 Hi there! You are currently looking at the website for my CS CM124 project. My name (as shown above) is Andrew Kuang and I am a fourth-year student at UCLA majoring in Computer Science. Below, you will find an introduction to the project I have decided to tackle as well as my source code and presentation slides. I will also be tracking my weekly progress throughout this process and providing self-evaluation and planning for the weeks to come.
 </p>
 
 <h4>Introduction</h4>
 
+<p style="text-indent: 3em;">
 Being an undergraduate, I decided to take on the easy version of project 3, estimating relatedness. For this project, I will be taking the genotypes of two individuals (whom I will know to be related/unrelated; however, my program will not) and testing the accuracy of my algorithm in determining the relatedness. I will also be implementing a baseline method that will naively compare the two genotypes to determine relatedness. After, I will design my own algorithm that will ideally improve on the three benchmarks of speed, accuracy, and memory. More in-depth information can be found in my presentation slides below.
+</p>
 
 <h4>Goals</h4>
 
-List goals of the project here.
+For this project my goals are to:</br>
+</br>
+1. Come up with a naive, baseline algorithm.</br>
+2. Be able to generate data to test on.</br>
+3. Come up with an improved algorithm (on three benchmarks: speed, accuracy, memory).</br>
+4. Compare the two algorithms on varying SNP sizes and minor allele frequencies (MAF).</br>
+5. Improve my own algorithm to see a signifncant increase in performance.</br>
+6. Understand the relationship between SNP sizes, mafs, and false positives.</br>
 
 <h4>Code</h4>
 
-<a href="createData.java">Data Generator</a>
-<a href="relatednessEstimator.java">Relatedness Estimator</a>
-<a href="cm124presentation.pdf">Presentation</a>
+<a href="createData.java">Data Generator</a></br>
+<a href="relatednessEstimator.java">Relatedness Estimator</a></br>
+<a href="cm124presentation.pdf">Presentation</a></br>
+</br>
+
+<h1> Weekly Progress Reports </h1>
 
 <hr>
-<h4>Week X</h4>
-<h5>Progress</h5>
+<h3>Week 5: April 27, 2015 ~ May 3, 2015</h3>
+<h4>Progress Report</h4>
 
-Progress for the week.
+- After thinking it over, I have chosen to go with Project 3, the relatedness estimator. </br>
+- Learned how to create a webpage on Github to host my project wiki.</br>
 
-<h5>Issues</h5>
+<h4>Issues</h4>
 
-Any problems encountered this week.
+- No issues, as I haven't started the actual project, but I need to understand the project first.
 
-<h5>Grade</h5>
+<h4>Future Plans</h4>
 
-Self-evaluation.
+- Read up on relatedness; understand the computational problem.</br>
+- Come up with a baseline algorithm.</br>
 
-<h5>Future Plans</h5>
+<p1 style="text-align: right">
+<h4>Grade: B</h4>
+</p1>
 
-Future plans.
+<hr>
+<h3>Week 6: May 4, 2015 ~ May 10, 2015</h3>
+<h4>Progress Report</h4>
+
+- Attempted to come up with baseline algorithm, very simple.</br>
+	> compare two individuals's genotypes SNP by SNP, it > 50% of matches -> assume related.</br>
+- Need to come up with a way to generate data so that I can test the baseline algorithm.</br>
+
+<h4>Issues</h4>
+
+- No issues yet during the writing of the baseline algorithm code; however, no testing has been done, so results are unconclusive.</br>
+
+<h4>Future Plans</h4>
+
+- Come up with data generator quickly so that I can begin testing my baseline algorithm.</br>
+- Start working on improved algorithm.</br>
+
+<p1 style="text-align: right">
+<h4>Grade: B</h4>
+</p1>
+
+<hr>
+<h3>Week 7: May 11, 2015 ~ May 17, 2015</h3>
+<h4>Progress Report</h4>
+
+- Successfully created data generator and tested baseline algorithm. Results of algorithm were not bad considering the naivety of the approach.</br>
+- Working on improved algorithm; I think I will need to use some sort of probability matrix (based on Bayes' theorem) and look at generations (i.e. parents)</br>
+
+<h4>Issues</h4>
+
+- Had some trouble properly creating the data generator, but all in all in was pretty straightforward. After some testing, everything worked fine.</br>
+- Having some trouble coming up with my own algorithm. Still researching various approaches, but some of them seem too mathematically intensive for my purposes. </br>
+- Busy with school, not much time to work on the project. Need to pick up speed to finish before presentation time.</br>
+
+<h4>Future Plans</h4>
+
+- Do more research on the various methods and choose one.</br>
+- Implement said method.</br>
+- Test against baseline algorithm and compare results.</br>
+
+<p1 style="text-align: right">
+<h4>Grade: C</h4>
+</p1>
+
+<hr>
+<h3>Week 8: May 18, 2015 ~ May 24, 2015</h3>
+<h4>Progress Report</h4>
+
+- Finally had more time to work on the project this week, was able to finish an elementary version of my final algorithm. Performs slightly better than the baseline algorithm.
+
+<h4>Issues</h4>
+
+- Few issues sorting things out to come up with my current algorithm, but still needs improvement. Will probably spend a lot of time next week to complete the algorithm, run my tests, and make my presentation.
+
+<h4>Future Plans</h4>
+
+- Improve algorithm further. Try some new tweaks and maybe double-check probability matrices to ensure everything is calculated correctly. Check for any optimziations.</br>
+- Once satisfied with algorithm, begin testing it against the baseline and start gathering data for presentation.</br>
+- Make presentation.</br>
+
+<p1 style="text-align: right">
+<h4>Grade: B</h4>
+</p1>
+
+<hr>
+<h3>Week 9: May 25, 2015 ~ May 31, 2015</h3>
+<h4>Progress Report</h4>
+
+- Algorithm is at a satisfactory performance level (accuracy and memory). Maybe need clean up algorithm with comments and proper formatting.</br>
+- Was supposed to present this week Friday, but was pushed to next week. As such, I had already finished the presentation, but may go back to make some improvements.</br>
+
+<h4>Issues</h4>
+
+- No large problems; found some optimization errors in my code and fixed those. </br>
+- Running the tests on the two algorithms made me realize a few errors in my computations and, fixing those, allowed me to complete my algorithm.</br>
+
+<h4>Future Plans</h4>
+
+- Pretty much done with everything. Fix presentation and code?</br>
+
+<p1 style="text-align: right">
+<h4>Grade: A</h4>
+</p1>
+
+<hr>
+<h3>Week 10: June 1, 2015 ~ June 7, 2015</h3>
+<h4>Progress Report</h4>
+
+- Made some minor changes to formatting both in the code and presentation.</br>
+- Finally presented.</br>
+
+<h4>Issues</h4>
+
+- None.
+
+<h4>Future Plans</h4>
+
+- Still need to show Dat my code.</br>
+- Study for the final.</br>
+
+<p1 style="text-align: right">
+<h4>Grade: A</h4>
+</p1>
+
+</br>
+</br>
+</br>
+
 
 </div>
 </html>
